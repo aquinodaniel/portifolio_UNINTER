@@ -1,0 +1,427 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*BODY*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    color: #000;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    gap: 143px;
+    padding: 20px;
+
+}
+
+.mainProfile img {
+    width: 400px;
+    height: 300px;
+}
+
+.mainInfos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 190px;
+}
+
+.mainInfos p {
+    margin-top: 18px;
+    font-size: 20px;
+}
+
+.mainIcons {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.mainIcons a,
+.mainIcons i {
+    font-size: 24px;
+    color: #000;
+    transition: 0.3s ease;
+}
+
+.mainIcons a i:hover,
+.mainIcons i:hover {
+    transform: scale(1.2);
+    color: rgb(99, 99, 99);
+    cursor: pointer;
+}
+
+.mainIcons a:hover {
+    transform: scale(1.2);
+}
+
+
+/*about me*/
+
+.aboutMe {
+    background-color: #242424;
+    padding: 60px;
+    margin-top: 170px;
+}
+
+.aboutMe header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-align: center;
+}
+
+.mainDescription p {
+    color: white;
+    margin-top: 40px;
+    font-size: 18px;
+    text-indent: 1em;
+}
+
+.languagesDescription h1 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.htmlDescription p {
+    max-width: 1500px;
+}
+
+.jsDescription p {
+    max-width: 1500px;
+}
+
+/*progress cicle*/
+
+.progress-circle {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-circle {
+    flex-wrap: wrap;
+}
+
+.progress-circle svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+    /* Ajusta a rotação, caso queira começar do topo */
+}
+
+.progress-circle circle {
+    fill: none;
+    stroke-width: 10;
+    cx: 50%;
+    cy: 50%;
+}
+
+.progress-circle .progress-bg {
+    stroke: #e6e6e6;
+    stroke-dasharray: 376.99;
+    /* Novo perímetro */
+}
+
+.progress-circle .progress-bar {
+    stroke: #ff3300;
+    stroke-dasharray: 376.99;
+    /* Novo perímetro */
+    stroke-dashoffset: calc(376.99 - (376.99 * var(--progress)) / 100);
+    /* Novo cálculo baseado no perímetro */
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+.progress-circle .progress-value {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/*-----------------------*/
+
+.progress-circle-js {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-circle-js {
+    flex-wrap: wrap;
+}
+
+.progress-circle-js svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+    /* Ajusta a rotação, caso queira começar do topo */
+}
+
+.progress-circle-js circle {
+    fill: none;
+    stroke-width: 10;
+    cx: 50%;
+    cy: 50%;
+}
+
+.progress-circle-js .progress-bg-js {
+    stroke: #e6e6e6;
+    stroke-dasharray: 376.99;
+    /* Novo perímetro */
+}
+
+.progress-circle-js .progress-bar-js {
+    stroke: #fbff00;
+    stroke-dasharray: 376.99;
+    /* Novo perímetro */
+    stroke-dashoffset: calc(376.99 - (376.99 * var(--progress)) / 100);
+    /* Novo cálculo baseado no perímetro */
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+.progress-circle-js .progress-value-js {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/*--------------------------------------------------*/
+
+.progress-circle-php {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-circle-php {
+    flex-wrap: wrap;
+}
+
+.progress-circle-php svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+    /* Ajusta a rotação, caso queira começar do topo */
+}
+
+.progress-circle-php circle {
+    fill: none;
+    stroke-width: 10;
+    cx: 50%;
+    cy: 50%;
+}
+
+.progress-circle-php .progress-bg-php {
+    stroke: #e6e6e6;
+    stroke-dasharray: 376.99;
+    /* Novo perímetro */
+}
+
+.progress-circle-php .progress-bar-php {
+    stroke: #0084ff;
+    stroke-dasharray: 376.99;
+    /* Novo perímetro */
+    stroke-dashoffset: calc(376.99 - (376.99 * var(--progress)) / 100);
+    /* Novo cálculo baseado no perímetro */
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+.progress-circle-php .progress-value-php {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/*-------------------*/
+
+.htmlDescription {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.htmlDescription p {
+    text-indent: 0;
+    color: white;
+}
+
+.jsDescription {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.jsDescription p {
+    text-indent: 0;
+    color: white;
+}
+
+.phpDescription {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.phpDescription p {
+    text-indent: 0;
+    color: white;
+}
+
+/*SESSAO EDUCACIONAL*/
+.formacaoSubsection {
+    margin-top: 60px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.formacaoSubsection h2 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.formacaoSubsection ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.formacaoSubsection li {
+    margin-bottom: 8px;
+}
+
+
+/*PROJECT PROFILES*/
+
+.profileProjects h1 {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.projectContainer {
+    background-color: white;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+.projectContainer button {
+    padding: 10px;
+    border-radius: 19px;
+    font-size: 24px;
+    color: black;
+    border: none;
+    background-color: #e5ff00;
+    cursor: pointer;
+    margin-top: 36px;
+    transition: transform 0.2s ease;
+}
+
+.projectContainer button:hover {
+    transform: scale(1.02);
+    box-shadow: #000 0px 3px 3px;
+}
+
+
+.project p {
+    width: 100%;
+    text-align: center;
+}
+
+/*CONTATO*/
+
+.contactContainer {
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px;
+    gap: 20px;
+}
+
+.contactsInfos {
+    width: auto;
+}
+
+.contactsInfos p {
+    font-size: 18px;
+    margin-bottom: 19px;
+}
+
+.contactsInfos h1 {
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.formContato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.formContato input,
+.formContato textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.formContato button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e5ff00;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.formContato button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}

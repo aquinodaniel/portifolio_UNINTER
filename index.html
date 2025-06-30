@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portifolio: Daniel Aquino</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="portIndex.css">
+</head>
+
+<body>
+
+    <!-- cabeçalho para facilitar a navefgação com todos os links -->
+    <header>
+        <section>
+            <a href="#inicio">
+                <p>INICIO</p>
+            </a>
+            <a href="#sobre">
+                <p>SOBRE</p>
+            </a>
+            <a href="#projetos">
+                <p>PROJETOS</p>
+            </a>
+            <a href="#contato">
+                <p>CONTATO</p>
+            </a>
+        </section>
+    </header>
+
+
+    <!-- Apresentação principal do portifolio com uma imagem simulando uma foto minha e com links para redes sociais
+     utilizei a extensão para poder usar icones como o do intagram ou do linkedin -->
+    <main id="inicio">
+        <div class="mainInfos">
+            <div class="mainProfile">
+                <img src="portifolio_imagens/mario_model.png" alt="">
+            </div>
+            <div class="descriptionProfile">
+                <h1>
+                    Olá, Mundo!
+                </h1>
+                <p>Meu nome é Daniel Aquino, <br>
+                    tenho 18 anos e sou Dev há 1 ano.</p>
+                <div class="mainIcons">
+                    <a href="https://www.instagram.com/" target="_blank" style="text-decoration: none;">
+                        <i class=" fi fi-brands-instagram"></i>
+                    </a>
+                    <a href="https://github.com/aquinodaniel" target="_blank" style="text-decoration: none;">
+                        <i class="fi fi-brands-github" style="text-decoration: none;"></i>
+                    </a>
+                    <i class="fi fi-brands-twitter-alt-circle"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Começando a apresentação utilizei elementos e estilizações simples para apresentar o conteudo.  -->
+        <div class="aboutMe" id="sobre">
+            <header>
+                <h1>
+                    SOBRE MIM
+                </h1>
+            </header>
+            <div class="mainDescription">
+                <p>Olá, meu nome é Daniel e vou te contar brevemente sobre mim, minha história e minhas experiencias com
+                    o universo da programação. Para começar, nasci, cresci e vivo no interior de São Paulo, aos 2 anos
+                    meus pais se divorciaram e cresci morando com minha Mãe e meu irmão do meio (tenho um outro mais
+                    velho). Atualmente moro em Jarinu-Sp, uma cidade pequena perto de Jundiaí. Sempre me interessei por
+                    tecnologia e por materias da area de exatas, o que me deu grande afinidade com matemática no
+                    ensino básico e outras materias do mesmo, por isso, meu interesse por qualquer disciplina que
+                    envolva raciocinio e logica me parecem mais confortaveis e agradeveis, especial a programação .
+                    Comecei a estudar programção com 17 anos, iniciando minha jornada como dev fullStack aprendi o
+                    básico para começar a me introduzir nas linguagens backend como PHP. Atualmente estou estudando e
+                    buscando desenvolver conhecimento e competencia para poder realziar projetos.</p>
+            </div>
+
+            <!-- Seção de formação educacional -->
+            <div class="formacaoSubsection">
+                <h2>Formação Educacional</h2>
+                <p>
+                    Atualmente, sou estudante do curso de <strong>Licenciatura em Matemática</strong> pelo Instituto
+                    Federal de São Paulo – IFSP, campus Bragança Paulista.
+                    Desde os 17 anos, estudo de forma autodidata as tecnologias de desenvolvimento web, com foco em
+                    HTML, CSS, JavaScript e PHP.
+                </p>
+
+                <p>Minha formação inclui:</p>
+                <ul>
+                    <li>🔹 Ensino Médio Completo – PEI Jerônimo de Camargo</li>
+                    <li>🔹 Curso Superior Licenciatura em matemática (incompleto) - IFSP</li>
+                    <li>🔹 Curso superior Análise e desenvolvimento de sistemas (em andamento) - UNINTER </li>
+                </ul>
+
+                <p>Idiomas:</p>
+                <ul>
+                    <li>🇧🇷 Português – Nativo</li>
+                    <li>🇺🇸 Inglês – Intermediário (leitura técnica e conversação básica)</li>
+                </ul>
+            </div>
+
+
+            <!-- Nessa parte sera apresentado meus conhecimentos principais em tecnologias. Achei interessante utilizar uma barra de progresso,
+            mas para isso tive que pesquisar por fora como eu deveria fazer  -->
+            <div class="languagesDescription">
+                <h1>
+                    Tecnologias:
+                </h1>
+                <div class="htmlDescription">
+                    <div class="progress-circle">
+
+                        <!-- consegui a fazer essa progress-bar utilizando tutoriais, achei interessante a ideia -->
+                        <svg>
+                            <circle class="progress-bg" cx="50" cy="50" r="60"></circle>
+                            <circle class="progress-bar" cx="50" cy="50" r="60" style="--progress: 55;"></circle>
+                        </svg>
+                        <div class="progress-value" style="color: white;">55%</div>
+                        <h3 style="color: rgb(255, 94, 0); font-size: 20px; text-align: left;">HTML e CSS</h3>
+                    </div>
+                    <p>Estrutura, semantica, criação e manipulação de formularios, hovers, transições e manipulação de
+                        tabelas são algumas das minhas habilidades com HTML e CSS. Com elas consigo desenvolver sites e
+                        landing pages como essa que está agora! Com excperiencia em design gráfico, faço o prototipo em
+                        site externo (Figma) com o intuito de estrturar e poder pré-vizualizar o resutlado final.
+                        Visando atrair atenção e direcionar o publico alvo para o que precisa ser feito, dependendo da
+                        situação, crio design unicos como banners, logos, imagens representativas e etc.
+                    </p>
+                </div>
+                <div class="jsDescription">
+                    <div class="progress-circle-js">
+                        <svg>
+                            <circle class="progress-bg-js" cx="50" cy="50" r="60"></circle>
+                            <circle class="progress-bar-js" cx="50" cy="50" r="60" style="--progress: 25;"></circle>
+                        </svg>
+                        <div class="progress-value-js" style="color: white;">25%</div>
+                        <h3 style="color: rgb(251, 255, 0); font-size: 20px; text-align: left;">JavaScript</h3>
+                    </div>
+                    <p> De fundamentos até a manipulação de DOM faz com que eu consiga criar situações interessantes
+                        utilizando JavaScript! Criando formularios, fazendo validações, operações basicas de dados,
+                        dentre outras, faço com que os projetos tenham versatilidade, experiencias e qualidade
+                        satisfatória para o usuario, tendo como foco a praticidade e conforto durante a navegação
+                    </p>
+                </div>
+                <div class="phpDescription">
+                    <div class="progress-circle-php">
+                        <svg>
+                            <circle class="progress-bg-php" cx="50" cy="50" r="60"></circle>
+                            <circle class="progress-bar-php" cx="50" cy="50" r="60" style="--progress: 60;"></circle>
+                        </svg>
+                        <div class="progress-value-php" style="color: white;">60%</div>
+                        <h3 style="color: rgb(0, 119, 255); font-size: 20px; text-align: left;">PHP</h3>
+                    </div>
+                    <p>Dominando principalmente as ferramentas de desenvolvimento de sistemas para a WEB, com o PHP eu
+                        tenho a maior liberdade dentre todas as linguagens, conseguindo contruir sites dinamicoos
+                        utilizando o modelo MVC e integrando o uso do CRUD.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Apresentando meus projetos, fiz a conexão colocando os projetos dentroo de uma pasta na raiz do projeto para direciona-los pelos diretorios -->
+        <div class="profileProjects" id="projetos">
+            <h1>
+                PROJETOS
+            </h1>
+            <div class="projectContainer">
+                <div class="project">
+                    <img src="portifolio_imagens/Notebook_rZationReference-removebg-preview (1).png" alt="">
+                    <p>
+                        Protótipo de Kambam com HTML, CSS, BootStrap e JavaScript
+                    </p>
+                    <a href="zatioLinekr/ZAtion/pag inicial/index.html"><button>VEJA MAIS!</button></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Novamnete o uso de icones para aparencia e mais um formulario simples usando inputs e form -->
+        <div class="contactContainer" id="contato">
+            <div class="contactsInfos">
+                <h1>
+                    CONTATOS
+                </h1>
+                <p> <i class="fi fi-brands-whatsapp" style="color: green;"></i> +55 (11) 95789-6125</p>
+                <p><i class="fi fi-rr-envelope"></i> danielkq200@gmail.com</p>
+                <p><i class="fi fi-brands-linkedin" style="color: rgb(0, 102, 255);"></i> <a
+                        href="https://www.linkedin.com/in/daniel-aquino-628a80276/" style="color: white;">Daniel
+                        Aquino</a></p>
+                <form action="https://formsubmit.co/danielkq200@gmail.com" method="POST" class="formContato">
+                    <input type="text" name="nome" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu email" required>
+                    <textarea name="mensagem" placeholder="Sua mensagem" rows="4" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
